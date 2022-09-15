@@ -1,0 +1,19 @@
+@keyframes menuAppear {
+    from {
+        top: -65px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes menuDissappear {
+    from {
+        opacity: 0.75;
+        position: fixed;
+    }
+    to {
+        opacity: 0;
+        position: absolute;
+    }
+}

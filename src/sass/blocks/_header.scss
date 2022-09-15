@@ -1,0 +1,45 @@
+.nav {
+    height: 65px;
+    width: 100%;
+    background: #fff;
+    transition: 0.5s;
+    z-index: 1000;
+    &_static {
+        position: absolute;
+        animation: menuDissappear 0.5s linear;
+    }   
+    &_dynamic {
+        position: fixed;
+        opacity: 0.75;
+        border: 1px solid #E8E8E8;
+        animation: menuAppear 0.5s linear;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        padding: 15px;
+    }
+    &__navbar {
+        list-style-type: none;
+        margin-top: 8px;
+        &__item {
+            float: left;
+            padding: 15px;
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: var(--text-color-p);
+                &:hover {
+                    color: var(--active-color);
+                }               
+            }
+        }
+        .active {
+            a {
+                color: var(--active-color);
+            }
+        }
+    }
+}
