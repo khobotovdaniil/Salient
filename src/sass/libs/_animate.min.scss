@@ -128,8 +128,8 @@ print {
 @keyframes fadeInUp {
     0% {
         opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0)
+        -webkit-transform: translate3d(0, 50%, 0);
+        transform: translate3d(0, 50%, 0)
     }
 
     to {
@@ -147,8 +147,8 @@ print {
 @keyframes fadeInLeft {
     0% {
         opacity: 0;
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0)
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0)
     }
 
     to {
@@ -166,8 +166,8 @@ print {
 @keyframes fadeInRight {
     0% {
         opacity: 0;
-        -webkit-transform: translate3d(100%, 0, 0);
-        transform: translate3d(100%, 0, 0)
+        -webkit-transform: translate3d(50%, 0, 0);
+        transform: translate3d(50%, 0, 0)
     }
 
     to {
@@ -180,4 +180,57 @@ print {
 .animate__fadeInRight {
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight
+}
+
+@keyframes fadeInBottomLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-30%, 30%, 0);
+        transform: translate3d(-30%, 30%, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+.animate__fadeInBottomLeft {
+    -webkit-animation-name: fadeInBottomLeft;
+    animation-name: fadeInBottomLeft
+}
+
+@keyframes fadeInBottomRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(30%, 30%, 0);
+        transform: translate3d(30%, 30%, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+.animate__fadeInBottomRight {
+    -webkit-animation-name: fadeInBottomRight;
+    animation-name: fadeInBottomRight
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate__fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn
 }

@@ -19,27 +19,29 @@ p {
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 43px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
     letter-spacing: 8px;
+    margin-bottom: 0;
 }
 
 h2 {
     font-size: 30px;
-    text-align: center;
-    font-weight: 700;
+    margin-bottom: 0;
 }
 
 h3 {
-    margin-top: 15px;
     font-size: 16px;
+    text-align: center;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 700;
     text-align: center;
 }
 
 .subtitle {
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 300;
     text-align: center;
     
@@ -47,4 +49,10 @@ h3 {
 
 .white {
     color: var(--text-color-w);
+}
+
+.small {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 38px;
 }

@@ -7,10 +7,15 @@
 :root {
     --main-color: #fc6e51;
     --active-color: #fc6e51;
+    --active-color-rgba: 252, 110, 81, 0.9;
     --text-color-p: #737272;
     --text-color-h: #1f2021;
     --text-color-w: #fff;
     --text-color-b: #000;
+    --black-color-rgba:	0, 0, 0, 0.5;
+    --white-color-rgba:	255, 255, 255, 0.9;
+    --grey-color: #EAEAEA;
+    --dark-grey-color: #8e8e8e;
 }
 
 .container {
@@ -19,16 +24,16 @@
 }
 
 .divider {
-    height: 3px;
-    margin: 20px auto 0;
+    height: 2px;
+    margin: 25px auto 0;
     &_white {
         width: 50px;
         background-color: var(--text-color-w);
     }
     &_clear {
-        margin-top: 40px;
         width: 85px;
-        border: 1px solid #000;
+        height: 1px;
+        background-color: var(--grey-color);
     }
     
 }
@@ -40,5 +45,7 @@
 @import 'blocks/promo';
 @import 'blocks/about';
 @import 'blocks/services';
+@import 'blocks/video';
+@import 'blocks/team';
 
 @import 'base/animations';

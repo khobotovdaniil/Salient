@@ -27,18 +27,17 @@
         &__item {
             float: left;
             padding: 15px;
-            a {
+            &__link {
                 text-decoration: none;
                 text-transform: uppercase;
                 color: var(--text-color-p);
                 &:hover {
                     color: var(--active-color);
+                }
+                &_active {
+                    color: var(--active-color);
+                    font-weight: 700;
                 }               
-            }
-        }
-        .active {
-            a {
-                color: var(--active-color);
             }
         }
     }

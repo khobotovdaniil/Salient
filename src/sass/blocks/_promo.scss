@@ -1,12 +1,10 @@
 .promo {
     height: 100vh;
-    background: url('../img/bg/main_bg.jpg') center center/cover no-repeat;
-    background-position: 0% 0;
-    background-attachment: fixed;
+    background: url('../img/bg/main_bg.jpg') 0 0/cover no-repeat fixed;
     &:before {
         position: absolute;
         content: '';
-        background: rgba(0,0,0,0.5);
+        background: rgba(var(--black-color-rgba));
         width: 100%;
         height: 100%;
     }

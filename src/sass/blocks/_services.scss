@@ -1,3 +1,48 @@
 .services {
     min-height: 1100px;
+    padding: 80px 0;
+    &__text {
+        margin: 25px auto 0;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 1.7px;
+        width: 60%;
+    }
+    &__wrapper {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__items {
+        &__item {
+            margin-top: 30px;
+            width: 280px;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            gap: 10px;
+            &__title {
+                text-align: left;
+            }
+            &__icon {
+                height: 50px;
+                width: 50px;
+                text-align: center;
+                grid-row: 1 / 3;
+                span {
+                    font-size: 32px;
+                    color: #fc6e51;
+                }
+            }
+        }
+    }
+    &__img {
+        margin: 0 auto;
+        padding: 0 10px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
