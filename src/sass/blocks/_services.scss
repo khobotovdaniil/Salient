@@ -1,14 +1,6 @@
 .services {
     min-height: 1100px;
     padding: 80px 0;
-    &__text {
-        margin: 25px auto 0;
-        font-size: 16px;
-        line-height: 28px;
-        text-align: center;
-        letter-spacing: 1.7px;
-        width: 60%;
-    }
     &__wrapper {
         margin-top: 80px;
         display: flex;
@@ -23,6 +15,7 @@
             gap: 10px;
             &__title {
                 text-align: left;
+                text-transform: uppercase;
             }
             &__icon {
                 height: 50px;

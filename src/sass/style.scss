@@ -12,8 +12,9 @@
     --text-color-h: #1f2021;
     --text-color-w: #fff;
     --text-color-b: #000;
-    --black-color-rgba:	0, 0, 0, 0.5;
+    --black-color-rgba:	0, 0, 0, 0.8;
     --white-color-rgba:	255, 255, 255, 0.9;
+    --dark-grey-color-rgba: 0, 0, 0, 0.5;
     --grey-color: #EAEAEA;
     --dark-grey-color: #8e8e8e;
 }
@@ -47,5 +48,10 @@
 @import 'blocks/services';
 @import 'blocks/video';
 @import 'blocks/team';
+@import 'blocks/skills';
+@import 'blocks/banner';
+@import 'blocks/mobileapp';
+@import 'blocks/project';
+@import 'blocks/works';
 
 @import 'base/animations';

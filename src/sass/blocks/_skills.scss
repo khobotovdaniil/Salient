@@ -1,0 +1,45 @@
+.skills {
+    min-height: 300px;
+    padding-bottom: 50px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+    }
+    &__info {
+        &__title {
+            text-align: left;
+        }
+        &__text {
+            margin-top: 30px;
+        }
+    }
+    &__list {
+        &__item {
+            display: grid;
+            grid-template-columns: (repeat(2, minmax(50px, 1fr)));
+            justify-content: space-between;
+            margin-bottom: 10px;
+            &__descr {
+                font-weight: 300;
+                &_right {
+                    text-align: right;
+                }
+            }
+            &__bar {
+                grid-column: 1/3;
+                margin-top: 5px;
+                width: 100%;
+                height: 6px;
+                background-color: var(--grey-color);
+                border-radius: 4px;
+                &_fill {
+                    background-color: var(--active-color);
+                    border-radius: 4px;
+                    height: 6px;
+                    filter: drop-shadow(3px 0px 1px var(--text-color-b));
+                }
+            }
+        }
+    }
+}
