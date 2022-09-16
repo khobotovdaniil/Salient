@@ -1,23 +1,16 @@
 @import 'libs/bootstrap-reboot.min';
+@import 'libs/font-awesome.min';
+@import 'libs/et-line';
+@import 'libs/animate.min';
+
 
 :root {
     --main-color: #fc6e51;
     --active-color: #fc6e51;
     --text-color-p: #737272;
     --text-color-h: #1f2021;
-    --text-color-h: #fff;
+    --text-color-w: #fff;
     --text-color-b: #000;
-}
-
-* {
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
-    font-size: 13px;
-}
-
-p {
-    margin-bottom: 0;
 }
 
 .container {
@@ -25,8 +18,27 @@ p {
     margin: 0 auto;
 }
 
+.divider {
+    height: 3px;
+    margin: 20px auto 0;
+    &_white {
+        width: 50px;
+        background-color: var(--text-color-w);
+    }
+    &_clear {
+        margin-top: 40px;
+        width: 85px;
+        border: 1px solid #000;
+    }
+    
+}
+
+@import 'base/text';
+@import 'base/buttons';
+
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/about';
+@import 'blocks/services';
 
 @import 'base/animations';

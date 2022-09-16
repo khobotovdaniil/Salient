@@ -1,3 +1,33 @@
 .about {
-    min-height: 800px;
+    min-height: 650px;
+    padding: 100px 0;
+    border-bottom: 1px solid #EAEAEA;
+    &__text {
+        margin: 50px auto 0;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 1.7px;
+        width: 60%;
+    }
+    &__wrapper {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: (repeat(3, 1fr));
+        gap: 20px;
+    }
+    &__item {
+        &__icon {
+            height: 60px;
+            color: var(--main-color);
+            text-align: center;
+            span {
+                font-size: 42px;
+            }
+        }
+        &__text {
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
 }

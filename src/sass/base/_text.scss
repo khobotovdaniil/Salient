@@ -1,0 +1,50 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    letter-spacing: 1.2px;
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 0;
+    color: var(--text-color-p);
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 43px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+h3 {
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.subtitle {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+.white {
+    color: var(--text-color-w);
+}
