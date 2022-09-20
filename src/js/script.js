@@ -1,3 +1,4 @@
+
 window.addEventListener('DOMContentLoaded', () => {
 
     //static/dynamic menu
@@ -47,5 +48,39 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    new WOW().init();
+    //slider
+    var glide = new Glide('.works__glide', {
+        type: 'carousel',
+        startAt: 0,
+        autoplay: 2000,
+        hoverpause: true,
+        perView: 5,
+        animationDuration: 1000,
+        cloningRatio: 3,
+        breakpoints:{
+            1199: {
+                perView: 3
+            },
+            768: {
+                    perView: 2
+            },
+            479: {
+                perView: 1
+            }
+        },
+    });
+    
+    glide.mount();
+
+    //wow
+    wow = new WOW({
+        boxClass:     'wow',      
+        animateClass: 'animated', 
+        offset:       20,          
+        mobile:       false,       
+        live:         true        
+    });
+
+    wow.init();
+
 });

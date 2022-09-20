@@ -1,8 +1,13 @@
 @import 'libs/bootstrap-reboot.min';
+
+@import 'base/variables';
+@import 'base/text';
+@import 'base/buttons';
+
 @import 'libs/font-awesome.min';
 @import 'libs/et-line';
 @import 'libs/animate.min';
-
+@import 'libs/glide.core';
 
 :root {
     --main-color: #fc6e51;
@@ -38,9 +43,6 @@
     }
     
 }
-
-@import 'base/text';
-@import 'base/buttons';
 
 @import 'blocks/header';
 @import 'blocks/promo';

@@ -3,15 +3,33 @@
     text-align: center;
     width: 130px;
     height: 50px;
+    transition: 1s;
+    &__wrapper {
+        text-align: center;
+        margin-top: 30px;
+    }
     &_clear {
         border: 1px solid var(--text-color-w);
     }
     &_red {
         background-color: var(--main-color);
         width: 170px;
-        transition: 1s;
         &:hover {
             background-color: var(--text-color-b);
+        }
+    }
+    &_circle {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 1px solid var(--main-color);
+        font-size: 21px;
+        color: var(--main-color);
+        transition: 0.5s;
+        background-color: #fff;
+        &:hover {
+            background-color: var(--main-color);
+            color: var(--text-color-w);
         }
     }
     a {
