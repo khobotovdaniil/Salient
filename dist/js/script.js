@@ -14,10 +14,39 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    //skills
+    const progressBars = document.querySelectorAll('.skills__list__item__bar_fill');
+
+    function progressBarsData() {
+        progressBars.forEach ((item) => {
+            item.setAttribute('data-width',item.parentElement.previousElementSibling.innerHTML);
+        });
+    }
+
+    progressBarsData();
+
+    function fillProgressBar () {
+        let progressBarWidth = 0;
+        let timerID = setTimeout(function setWidth() {
+            progressBars.forEach ((item) => {
+                if (progressBarWidth<parseInt(item.getAttribute('data-width'))) {
+                    item.style.width = `${progressBarWidth}%`;
+                }
+            });
+            progressBarWidth+=1;
+    
+            timerID = setTimeout(setWidth, 10);
+            if (progressBarWidth>=100) {
+                clearTimeout(timerID);
+            }
+        }, 10);
+    }
+
     //highlight menu objects
     const getId = (link) => link.getAttribute('href').replace('#', '');
-
-    const observer = new IntersectionObserver((entries) => {
+    let progressBarFilled = 0;
+    
+    const sectionObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 document.querySelectorAll('.nav__navbar__item__link').forEach((link) => {
@@ -25,6 +54,10 @@ window.addEventListener('DOMContentLoaded', () => {
                     getId(link) === entry.target.id
                     );
                 });
+                if(entry.target.className=='skills' && !progressBarFilled) {
+                    fillProgressBar ();
+                    progressBarFilled=1;
+                }
             }
         });
     }, {
@@ -32,7 +65,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     document.querySelectorAll('section').forEach((section) => {
-        observer.observe(section);
+        sectionObserver.observe(section);
     });
 
     //smooth scroll on click
@@ -46,7 +79,6 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
-
 
     //slider
     var glide = new Glide('.works__glide', {
